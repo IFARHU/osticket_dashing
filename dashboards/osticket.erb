@@ -1,0 +1,59 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for :title do %>Dirección de Tecnología Informática<% end %>
+
+<div class="gridster">
+  <ul>
+  	<!-- Row 1 -->
+  	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  	  <div data-view="Image" data-image="/LOGO_DTI.png"></div>
+  	</li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="open-tickets" data-view="Number" data-title="Abiertas" data-value="300"></div>
+      <i class="icon-exclamation-sign icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="resolved-tickets" data-view="Number" data-title="Resueltas" data-value="300" style="background-color:#ff9618;"></div>
+      <i class="icon-check icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="closed-tickets" data-view="Number" data-title="Cerradas" data-value="300" style="background-color:#96bf48;"></div>
+      <i class="icon-ok-circle icon-background"></i>
+    </li>
+
+    <!-- Row 2 -->
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="tickets_soporte" data-view="List" data-unordered="true" data-title="Soporte Técnico" style="background-color:#ff9618;"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="2">
+      <div data-id="tickets_procesamiento" data-view="List" data-unordered="true" data-title="Procesamiento" style="background-color:#96bf48;"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="2">
+      <div data-id="tickets_desarrollo" data-view="List" data-unordered="true" data-title="Desarrollo"></div>
+    </li>
+
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="2">
+      <div data-id="tickets_telecomunicaciones" data-view="List" data-unordered="true" data-title="Telecomunicaciones" style="background-color:#4866b2"></div>
+    </li>
+
+    <li data-row="2" data-col="5" data-sizex="1" data-sizey="2">
+      <div data-id="tickets_seguridad" data-view="List" data-unordered="true" data-title="Seguridad Informática" style="background-color:#dc5945"></div>
+    </li>
+  </ul>
+</div>

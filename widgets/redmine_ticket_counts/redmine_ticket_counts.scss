@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #47bbb3;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-redmine-ticket-counts styles
+// ----------------------------------------------------------------------------
+.widget-redmine-ticket-counts {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .value {
+    color: $value-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}
