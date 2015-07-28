@@ -1,1 +1,3 @@
-Check out http://shopify.github.com/dashing for more information.
+# IFARHU - Dashboard
+
+This dashboard is implemented using Shopify Dashing. Read more [here](http://dashing.io)
