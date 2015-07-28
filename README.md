@@ -1,3 +1,7 @@
 # IFARHU - Dashboard
 
-This dashboard is implemented using Shopify Dashing. Read more [here](http://dashing.io)
+![Dashboard Screenshot](assets/images/screenshot.png)
+
+This dashboard is implemented by using Shopify Dashing. Read more [here](http://dashing.io).
+
+IFARHU, Dirección de Tecnología Informática. 2015.
