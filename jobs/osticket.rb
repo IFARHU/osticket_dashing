@@ -1,5 +1,3 @@
-require 'mysql2'
-
 current_valuation = 0
 current_open = 0
 current_closed = 0
@@ -7,15 +5,6 @@ current_resolved = 0
 
 # Execute every 1 minute
 SCHEDULER.every '60s' do
-  # Database
-  db = Mysql2::Client.new(
-    :host => "10.252.164.120",
-    :username => "dashing_report",
-    :password => "IFARHU",
-    :port => 3306,
-    :database => "osticket"
-  )
-
   # Queries
   by_status = "SELECT
     COUNT(ticket_id) AS num,
@@ -29,7 +18,7 @@ SCHEDULER.every '60s' do
   last_resolved = current_resolved
 
   # Execute query
-  results = db.query(by_status)
+  results = settings.db.query(by_status)
   results.map do |row|
     if row['status_id'] == 1
       # Open

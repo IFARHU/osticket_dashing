@@ -12,7 +12,7 @@ by_department = "SELECT
   GROUP BY ost_ticket.status_id, ost_ticket.dept_id
   ORDER BY ost_ticket.dept_id;";
 
-SCHEDULER.every '30s' do
+SCHEDULER.every '65s' do
   departments = Hash.new({ value: 0 })
   results = settings.db.query(by_department)
   results.map do |row|

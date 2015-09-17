@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.6.5)
+    backports (3.6.6)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -19,14 +19,14 @@ GEM
       thin (~> 1.6.1)
       thor (~> 0.18.1)
     dotenv (2.0.2)
-    eventmachine (1.0.7)
+    eventmachine (1.0.8)
     execjs (2.0.2)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     hike (1.2.3)
     multi_json (1.11.2)
     multipart-post (2.0.0)
-    mysql2 (0.3.18)
+    mysql2 (0.4.1)
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
